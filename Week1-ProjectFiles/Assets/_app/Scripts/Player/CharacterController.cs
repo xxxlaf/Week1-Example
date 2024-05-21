@@ -22,7 +22,6 @@ public class CharacterController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             PlayerJump();
-            GameManager.instance.IncreaseScore();
         }
 
         if (Input.GetKey(KeyCode.W))
