@@ -1,11 +1,11 @@
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-
-    [SerializeField]
-    private int playerScore;
+    public TMP_Text scoreText;
+    public int playerScore;
 
     private void Awake()
     {
@@ -19,8 +19,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void IncreaseScore()
+    public void ChangeScore(int scoreAmount)
     {
-        playerScore++;
+        playerScore += scoreAmount;
+        scoreText.text = $"Player Score: { playerScore.ToString() }";
     }
 }

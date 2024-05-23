@@ -2,14 +2,20 @@ using UnityEngine;
 
 public class TriggerExample : MonoBehaviour
 {
+    [SerializeField]
     [Header("Int Example")]
-    public int count;
+    private int scoreAmount;
 
     public void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log(other.name + " Entered Trigger");
+            if (AudioManager.instance != null)
+            {
+                //AudioManager.instance.PlayAudio();
+                GameManager.instance.ChangeScore(scoreAmount);
+                Destroy(this.gameObject);
+            }
         }
     }
 
@@ -20,16 +26,11 @@ public class TriggerExample : MonoBehaviour
 
     public void OnCollisionEnter(Collision other)
     {
-        CountUp();
+        
     }
 
     public void OnCollisionExit(Collision other)
     {
         Debug.Log("No Longer Colliding With Object");
-    }
-
-    public void CountUp()
-    {
-        count++;
     }
 }
