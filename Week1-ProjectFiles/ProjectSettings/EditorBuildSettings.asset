@@ -9,5 +9,6 @@ EditorBuildSettings:
     path: Assets/_app/Scenes/Danny/DannyTestScene.unity
     guid: 2e943cbb2afd58248a2ca53a726bc977
   m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: fb12d063169c70d448c8f2a03f673a1d, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
