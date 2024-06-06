@@ -473,12 +473,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99917a1697274cd44bb23ffdb2fa1c44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 2
-  movementVector: {x: 0, y: 0, z: 0}
-  jumpForce: {x: 0, y: 3, z: 0}
-  crouching: 0
-  rb: {fileID: 392982271}
-  playerCamera: {fileID: 330585545}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,6 +790,7 @@ GameObject:
   - component: {fileID: 1134816166}
   - component: {fileID: 1134816165}
   - component: {fileID: 1134816167}
+  - component: {fileID: 1134816168}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -846,6 +841,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 2268b345c9914dd4e9fced9a1bb9cb65, type: 3}
   audioSource: {fileID: 1435318677}
+--- !u!114 &1134816168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134816164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175a5986ab6bcae458ee5a1e3cb2dbbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnEndGame:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1435318676
 GameObject:
   m_ObjectHideFlags: 0
